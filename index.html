@@ -10,137 +10,101 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
-        :root {
-            --denim: #2B506E;
-            --spice: #E67E22;
-            --sunshine: #F1C40F;
-            --cream: #FFF9F1;
-        }
-        body { 
-            font-family: 'Poppins', sans-serif; 
-            background-color: var(--cream); 
-            color: #2C3E50;
-            overflow-x: hidden;
-        }
+        :root { --denim: #2B506E; --spice: #E67E22; --sunshine: #F1C40F; --cream: #FFF9F1; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--cream); color: #2C3E50; overflow-x: hidden; }
         h1, h2 { font-family: 'Playfair Display', serif; }
         .fun-font { font-family: 'Fredoka One', cursive; }
-
-        /* Denim Texture Background */
-        .denim-bg {
-            background-color: var(--denim);
-            background-image: url("https://www.transparenttextures.com/patterns/denim.png");
-        }
-
+        .denim-bg { background-color: var(--denim); background-image: url("https://www.transparenttextures.com/patterns/denim.png"); }
         .floating { animation: float 3s ease-in-out infinite; }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .wisdom-card {
-            background: white;
-            border-left: 8px solid var(--spice);
-            transition: 0.3s;
-        }
-        .wisdom-card:hover { transform: scale(1.05) rotate(1deg); }
-
-        .btn-party {
-            background: linear-gradient(90deg, var(--denim), var(--spice));
-            color: white;
-            box-shadow: 0 10px 20px rgba(230, 126, 34, 0.3);
-        }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
+        .wisdom-card { background: white; border-left: 8px solid var(--spice); transition: 0.3s; }
+        .btn-party { background: linear-gradient(90deg, var(--denim), var(--spice)); color: white; box-shadow: 0 10px 20px rgba(230, 126, 34, 0.3); }
     </style>
 </head>
 <body>
 
     <!-- HERO SECTION -->
-    <section class="min-h-screen flex flex-col items-center justify-center text-center p-6 relative overflow-hidden bg-gradient-to-b from-[#FFEDD5] to-white">
+    <section class="min-h-screen flex flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-[#FFEDD5] to-white relative">
         <div class="absolute top-10 left-10 text-4xl opacity-20 floating">🍳</div>
         <div class="absolute bottom-20 right-10 text-4xl opacity-20 floating" style="animation-delay: 1s">🔥</div>
-        <div class="absolute top-1/2 right-20 text-4xl opacity-20 floating" style="animation-delay: 1.5s">💃</div>
 
         <div data-aos="zoom-in">
             <h3 class="fun-font text-spice tracking-widest text-xl mb-2 uppercase">The Real Lessons Begin!</h3>
-            <h1 class="text-6xl md:text-8xl font-black mb-4 text-[#2C3E50]">Kitchen Party</h1>
-            <p class="text-2xl italic mb-8">in honour of <span class="text-denim font-bold">Tatenda</span> 💛</p>
+            <h1 class="text-5xl md:text-7xl font-black mb-4 text-[#2C3E50]">Kitchen Party</h1>
+            <p class="text-xl italic mb-8">honouring our beautiful <span class="text-denim font-bold underline">Tatenda</span> 💛</p>
             
             <div class="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-8 border-white shadow-2xl mb-8">
-                <img src="https://i.postimg.cc/HxBf12h2/Whats-App-Image-2026-04-12-at-21-15-27.jpg" class="w-full h-full object-cover" alt="Tatenda">
+                <img src="https://i.postimg.cc/HxBf12h2/Whats-App-Image-2026-04-12-at-21-15-27.jpg" class="w-full h-full object-cover object-top" alt="Tatenda">
             </div>
 
-            <a href="#rsvp" class="btn-party px-10 py-4 rounded-full font-bold uppercase tracking-widest inline-block mb-4">Join the Party!</a>
-            <p class="text-xs font-bold opacity-60 italic">"Mudzimai akachenjera anovaka musha wake..."</p>
+            <a href="#rsvp" class="btn-party px-10 py-4 rounded-full font-bold uppercase tracking-widest inline-block mb-4">Count Me In!</a>
+            <p class="text-[10px] font-bold opacity-40 uppercase tracking-[0.2em]">Zvemukati hazvitaurwe panze...</p>
         </div>
     </section>
 
-    <!-- THE DEETS (EVENT DETAILS) -->
-    <section class="py-20 px-6 denim-bg text-white relative">
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div data-aos="fade-right">
-                <h2 class="text-4xl mb-6 fun-font">Pindai Mudzimba!</h2>
-                <p class="text-lg mb-8 opacity-90 leading-relaxed">
-                    Before the big day, we need to make sure Tatenda is fully equipped! We’re talking secret recipes, traditional wisdom, and those "private lessons" that keep the home fire burning. 🌶️
-                </p>
-                <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
-                    <p class="font-bold text-sunshine mb-2 uppercase tracking-widest">Dress Code:</p>
-                    <p class="text-2xl font-black">DENIM ON DENIM 👖</p>
-                    <p class="italic text-sm">Let’s see those outfits! Shambadzai denim yacho!</p>
-                </div>
-            </div>
-
-            <div class="space-y-6" data-aos="fade-left">
-                <div class="flex items-center gap-4 bg-white text-denim p-6 rounded-2xl shadow-xl">
-                    <div class="text-3xl">📅</div>
-                    <div>
-                        <p class="font-bold text-sm uppercase opacity-60">When</p>
-                        <p class="text-xl font-bold">22 December 2026</p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-4 bg-white text-denim p-6 rounded-2xl shadow-xl">
-                    <div class="text-3xl">📍</div>
-                    <div>
-                        <p class="font-bold text-sm uppercase opacity-60">Where</p>
-                        <p class="text-lg font-bold">7110 Flamingo, Greenside, Mutare</p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-4 bg-orange-500 text-white p-6 rounded-2xl shadow-xl border-4 border-sunshine">
-                    <div class="text-3xl">💵</div>
-                    <div>
-                        <p class="font-bold text-sm uppercase opacity-80 underline">Mandatory Contribution</p>
-                        <p class="text-2xl font-black">$10 Per Person</p>
-                        <p class="text-[10px] italic">No $10, no entry... we mean it! 😂</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WISDOM & QUOTES -->
-    <section class="py-20 px-6 bg-[#FEF3C7]">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl mb-12 fun-font text-denim">Kitchen Wisdom & Secret Sauces</h2>
+    <!-- EVENT DETAILS (FIXED BOXES) -->
+    <section class="py-20 px-6 denim-bg text-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl mb-12 text-center fun-font text-sunshine">The Details</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Quote 1 -->
-                <div class="wisdom-card p-8 rounded-2xl shadow-lg" data-aos="flip-up">
-                    <div class="text-4xl mb-4">🍲</div>
-                    <p class="italic text-sm">"A happy marriage is made in the kitchen... and perfected behind closed doors."</p>
-                    <p class="mt-4 font-bold text-xs uppercase text-spice">Lesson #1</p>
+                <!-- Date & Time -->
+                <div class="bg-white rounded-3xl p-8 flex flex-col items-center text-center text-denim shadow-2xl" data-aos="fade-up">
+                    <div class="text-5xl mb-4">🗓️</div>
+                    <h4 class="font-bold uppercase text-xs tracking-widest opacity-50 mb-2">When</h4>
+                    <p class="text-xl font-bold">22 December 2026</p>
+                    <p class="text-spice font-semibold">Starting at 12:00 Noon</p>
                 </div>
 
-                <!-- Quote 2 -->
-                <div class="wisdom-card p-8 rounded-2xl shadow-lg" data-aos="flip-up" data-aos-delay="100">
-                    <div class="text-4xl mb-4">🤫</div>
-                    <p class="italic text-sm">"Good food keeps the stomach full... but it’s not the only thing that keeps a man happy!"</p>
-                    <p class="mt-4 font-bold text-xs uppercase text-spice">The Secret Sauce</p>
+                <!-- Location -->
+                <div class="bg-white rounded-3xl p-8 flex flex-col items-center text-center text-denim shadow-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl mb-4">📍</div>
+                    <h4 class="font-bold uppercase text-xs tracking-widest opacity-50 mb-2">Where</h4>
+                    <p class="text-lg font-bold leading-tight">7110 Flamingo, Greenside</p>
+                    <p class="text-spice">Mutare, Zimbabwe</p>
                 </div>
 
-                <!-- Quote 3 -->
-                <div class="wisdom-card p-8 rounded-2xl shadow-lg" data-aos="flip-up" data-aos-delay="200">
-                    <div class="text-4xl mb-4">🔒</div>
-                    <p class="italic text-sm">"Zvinodzidziswa muKitchen Party, zvinosara muKitchen Party. What is taught here, stays here!"</p>
-                    <p class="mt-4 font-bold text-xs uppercase text-spice">The Golden Rule</p>
+                <!-- Subtle Contribution -->
+                <div class="bg-white rounded-3xl p-8 flex flex-col items-center text-center text-denim shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl mb-4">🍯</div>
+                    <h4 class="font-bold uppercase text-xs tracking-widest opacity-50 mb-2">The Love Token</h4>
+                    <p class="text-sm italic">To help us spice up the day, a small contribution of</p>
+                    <p class="text-3xl font-black text-spice mt-1">$10</p>
+                    <p class="text-[10px] mt-2 opacity-60 italic">...is kindly requested to keep the kitchen flowing!</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center bg-white/10 p-6 rounded-2xl border border-dashed border-white/30" data-aos="zoom-in">
+                <p class="font-bold text-sunshine mb-1 tracking-[0.2em] uppercase">Dress Code:</p>
+                <p class="text-2xl font-black italic">DENIM ON DENIM 👖</p>
+                <p class="text-xs opacity-70">Shambadzai denim yacho! Let's see those styles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPTION & WISDOM -->
+    <section class="py-20 px-6 bg-[#FEF3C7]/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-16" data-aos="fade-up">
+                <h2 class="text-4xl mb-6 fun-font text-denim">Pindai Mudzimba!</h2>
+                <p class="text-lg leading-relaxed text-gray-700 italic">
+                    "Mudzimai akachenjera anovaka musha wake..." <br>
+                    Come ready to cook, ready to dance, and ready to share those <strong>important lessons</strong> that go beyond the stove 😏. We’re spilling the tea and the spice!
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="wisdom-card p-8 rounded-2xl shadow-md text-sm" data-aos="flip-up">
+                    <p class="italic">"A happy marriage is made in the kitchen... and perfected behind closed doors." 😄</p>
+                    <p class="mt-4 font-bold text-spice tracking-widest uppercase text-[10px]">Kitchen Secret #1</p>
+                </div>
+                <div class="wisdom-card p-8 rounded-2xl shadow-md text-sm" data-aos="flip-up" data-aos-delay="100">
+                    <p class="italic">"Good food keeps the stomach full... but it’s not the only thing that keeps a partner happy!" 👀</p>
+                    <p class="mt-4 font-bold text-spice tracking-widest uppercase text-[10px]">The "Zvemukati" Advice</p>
+                </div>
+                <div class="wisdom-card p-8 rounded-2xl shadow-md text-sm" data-aos="flip-up" data-aos-delay="200">
+                    <p class="italic">"What is taught at the kitchen party... stays at the kitchen party!" 🔒</p>
+                    <p class="mt-4 font-bold text-spice tracking-widest uppercase text-[10px]">The Golden Rule</p>
                 </div>
             </div>
         </div>
@@ -151,33 +115,33 @@
         <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-sunshine via-spice to-denim"></div>
         
         <div class="max-w-md w-full" data-aos="zoom-in">
-            <h2 class="text-4xl text-center mb-4 fun-font text-spice">Will you be there?</h2>
-            <p class="text-center text-sm mb-10 italic">Please RSVP so we can prepare enough wisdom (and food!)</p>
+            <h2 class="text-4xl text-center mb-4 fun-font text-spice">RSVP</h2>
+            <p class="text-center text-xs mb-10 opacity-60">Can't join the dance? Leave your blessing or a kitchen secret below!</p>
             
             <form action="https://formspree.io/f/xnjlaoqw" method="POST" class="space-y-4">
                 <input type="text" name="Name" placeholder="Your Full Name" class="w-full p-4 rounded-xl border-2 border-gray-100 focus:border-spice outline-none transition-all" required>
                 
-                <select name="Attendance" class="w-full p-4 rounded-xl border-2 border-gray-100 focus:border-spice outline-none appearance-none" required>
+                <select name="Attendance" class="w-full p-4 rounded-xl border-2 border-gray-100 focus:border-spice outline-none appearance-none font-semibold text-denim" required>
                     <option value="" disabled selected>Will you be attending?</option>
                     <option value="Yes">Yes, I'm ready to learn! ✅</option>
                     <option value="No">No, I'll miss the secrets 😢</option>
                 </select>
 
-                <textarea name="Message" placeholder="A short message for Tatenda..." class="w-full p-4 rounded-xl border-2 border-gray-100 focus:border-spice outline-none h-32"></textarea>
+                <textarea name="Message" placeholder="Leave a message, kitchen secret, or blessing for Tatenda here..." class="w-full p-4 rounded-xl border-2 border-gray-100 focus:border-spice outline-none h-32"></textarea>
 
                 <button type="submit" class="w-full py-5 btn-party rounded-xl font-bold uppercase tracking-[0.2em] text-sm">
-                    Confirm My Attendance
+                    Send My Response
                 </button>
             </form>
             
-            <p class="mt-8 text-center text-xs opacity-40 font-bold uppercase tracking-widest">
-                Don't forget your $10 contribution! 😂
-            </p>
+            <div class="mt-8 text-center p-4 bg-[#FFF9F1] rounded-lg italic text-[11px] text-gray-400">
+                Note: Even if you cannot attend, your message will be shared with the bride during the wisdom session! 💛
+            </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-[10px] uppercase tracking-widest opacity-40">
-        ✨ Sending Tatenda off in style! Mutare 2026 ✨
+    <footer class="py-10 text-center text-[10px] uppercase tracking-widest opacity-30">
+        ✨ Sending Tatenda off in style! Greenside, Mutare 2026 ✨
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
